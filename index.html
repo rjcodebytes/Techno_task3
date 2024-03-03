@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="title">facebook</header>
+    <div class="myform">
+        <div class="fb">
+            <p>Create a new Account</p>
+            <p>It's easy & quick</p>
+        </div>
+        <div class="form">
+            <form id="myForm">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="validationName" placeholder="First name" required>
+                  <input type="text" class="form-control" id="validationName" placeholder="Surname" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control email-input" id="validationEmail" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control mobile-input" id="validationMobile" placeholder="Mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="dob-label" for="dob">Date of Birth :</label>
+                    <input type="text" class="form-control dob-input" id="dob" placeholder="dd/mm/yyyy" required>
+                    <span class="validity"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="dob-label" for="gender">Gender:</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                      <label class="form-check-label" for="male">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                      <label class="form-check-label" for="female">
+                        Female
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                      <label class="form-check-label" for="other">
+                        Other
+                      </label>
+                    </div>
+                    <span class="validity"></span>
+                  </div>  
+                  <button type="submit" class="btn btn-primary signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+ 
+      <script src="script.js"></script>
+  
+</body>
+</html>
